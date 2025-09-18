@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trent’s Birthday Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      margin: 20px 0 10px;
+    }
+    p {
+      margin: 0 0 20px;
+      color: #666;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      margin: 30px 0;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday Trent 🎉</h1>
+  <p>From your mate — Shawn</p>
+
+  <div class="gallery">
+    <img src="https://i.imgur.com/FuGglj4.png" alt="Photo 1">
+    <img src="https://i.imgur.com/uz1K2Bg.png" alt="Photo 2">
+  </div>
+
+  <footer>
+    © <span id="year"></span> Shawn
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
